@@ -1,0 +1,9 @@
+Geo\Application\Command\State\CreateStateCommand:
+  properties:
+    name:
+      - NotBlank:
+    abbr:
+      - NotBlank:
+      - Length:
+          min: 2
+          max: 2

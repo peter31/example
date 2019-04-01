@@ -1,0 +1,26 @@
+Geo\Domain\Model\Province:
+  exclusion_policy: all
+  properties:
+    id:
+      expose: true
+      groups: [province_id]
+    name:
+      expose: true
+      groups: [province_name]
+    slug:
+      expose: true
+      groups: [province_slug]
+    isDeleted:
+      expose: true
+      groups: [province_is_deleted]
+    updatedAt:
+      expose: true
+      groups: [province_updated_at]
+    cities:
+      expose: true
+      groups: [province_cities]
+
+  virtual_properties:
+    getCitiesCount:
+      serialized_name: total_cities
+      groups: [province_total_cities]

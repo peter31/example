@@ -1,0 +1,9 @@
+Geo\Application\Command\State\UpdateStateCommand:
+  properties:
+    name:
+      - NotIdenticalTo: ""
+    abbr:
+      - NotIdenticalTo: ""
+      - Length:
+          min: 2
+          max: 2

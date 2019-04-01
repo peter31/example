@@ -1,0 +1,10 @@
+Geo\Application\Command\City\CreateCityCommand:
+  properties:
+    name:
+      - NotBlank:
+    province:
+      - Range:
+          min: 1
+      - Geo\Adapter\Validator\ExistsEntity:
+          entityClass: Geo\Domain\Model\Province
+          typeName: province

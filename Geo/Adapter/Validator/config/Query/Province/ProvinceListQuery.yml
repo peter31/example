@@ -1,0 +1,9 @@
+Geo\Application\Query\Province\ProvinceListQuery:
+  properties:
+    sort:
+      - Type: string
+    sort_type:
+      - NotBlank:
+      - Choice: ['asc', 'desc', 'ASC', 'DESC']
+    filters:
+      - Valid:

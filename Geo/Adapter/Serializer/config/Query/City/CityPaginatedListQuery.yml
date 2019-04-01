@@ -1,0 +1,14 @@
+Geo\Application\Query\City\CityPaginatedListQuery:
+  properties:
+    page:
+      type: integer
+    limit:
+      type: integer
+    sort:
+      type: string
+    sort_type:
+      type: string
+    province:
+      type: integer
+    filters:
+      type: Geo\Application\Query\City\CityListFilterQuery

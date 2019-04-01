@@ -1,0 +1,18 @@
+Geo\Application\Query\State\StatePaginatedListQuery:
+  properties:
+    page:
+      - Type: integer
+      - Range:
+          min: 1
+    limit:
+      - Type: integer
+      - Range:
+          min: 1
+          max: 100
+    sort:
+      - Type: string
+    sort_type:
+      - NotBlank:
+      - Choice: ['asc', 'desc', 'ASC', 'DESC']
+    filters:
+      - Valid:

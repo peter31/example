@@ -1,0 +1,45 @@
+services:
+    GeoBundle\:
+        resource: '../../../GeoBundle/*'
+        namespace: Geo\Adapter\Symfony\GeoBundle\
+        exclude: '../../../GeoBundle/{DependencyInjection,Entity}'
+
+    GeoPorts\:
+        resource: '../../../../Port/*'
+        namespace: Geo\Adapter\Port\
+
+    GeoDoctrine\:
+        resource: '../../../../Doctrine/*'
+        namespace: Geo\Adapter\Doctrine\
+
+    GeoReporting\:
+        resource: '../../../../Reporting/*'
+        namespace: Geo\Adapter\Reporting\
+
+    GeoValidator\:
+        resource: '../../../../Validator/*'
+        namespace: Geo\Adapter\Validator\
+
+    GeoUseCases\:
+        resource: '../../../../../Application/UseCase/*'
+        namespace: Geo\Application\UseCase\
+
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+        bind:
+            $cityESRepository: '@Geo\Adapter\Elasticsearch\CityESRepository'
+            $provinceESRepository: '@Geo\Adapter\Elasticsearch\ProvinceESRepository'
+            $citiesIndex: '@fos_elastica.index.cities.city'
+            $provincesIndex: '@fos_elastica.index.provinces.province'
+            $reportingSymfonySerializer: '@snapcart.serializer.reporting'
+            $reportingCountry: '%country_code%'
+
+    Geo\Adapter\Elasticsearch\ProvinceESRepository:
+        factory: ['@fos_elastica.manager', getRepository]
+        arguments: ['Geo\Domain\Model\Province']
+
+    Geo\Adapter\Elasticsearch\CityESRepository:
+        factory: ['@fos_elastica.manager', getRepository]
+        arguments: ['Geo\Domain\Model\City']

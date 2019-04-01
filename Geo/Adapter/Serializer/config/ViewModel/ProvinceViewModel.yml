@@ -1,0 +1,7 @@
+Geo\Application\ViewModel\ProvinceViewModel:
+  exclusion_policy: all
+  properties:
+    province:
+      expose: true
+      type: Geo\Domain\Model\Province
+      groups: [province]

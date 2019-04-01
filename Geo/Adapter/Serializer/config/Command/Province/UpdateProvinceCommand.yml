@@ -1,0 +1,4 @@
+Geo\Application\Command\Province\UpdateProvinceCommand:
+  properties:
+    name:
+      type: string

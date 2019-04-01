@@ -1,0 +1,9 @@
+Geo\Domain\Model\City:
+  properties:
+    name:
+      - NotBlank:
+          message: validation.error.field.must_not_be_blank
+    isDeleted:
+      - Type:
+          type: boolean
+          message: validation.error.field.wrong_type

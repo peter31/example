@@ -1,0 +1,11 @@
+Geo\Application\ViewModel\PaginationViewModel:
+  exclusion_policy: all
+  properties:
+    total:
+      expose: true
+      type: integer
+      groups: [pagination]
+    current:
+      expose: true
+      type: integer
+      groups: [pagination]

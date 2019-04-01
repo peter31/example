@@ -1,0 +1,6 @@
+Geo\Application\Query\State\StateListFilterQuery:
+  properties:
+    name:
+      - Type: string
+    abbr:
+      - Type: string

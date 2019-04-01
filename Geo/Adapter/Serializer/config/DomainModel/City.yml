@@ -1,0 +1,21 @@
+Geo\Domain\Model\City:
+  exclusion_policy: all
+  properties:
+    id:
+      expose: true
+      groups: [city_id]
+    name:
+      expose: true
+      groups: [city_name]
+    slug:
+      expose: true
+      groups: [city_slug]
+    province:
+      expose: true
+      groups: [city_province]
+    isDeleted:
+      expose: true
+      groups: [city_is_deleted]
+    updatedAt:
+      expose: true
+      groups: [city_updated_at]

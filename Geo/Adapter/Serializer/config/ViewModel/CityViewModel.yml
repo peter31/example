@@ -1,0 +1,7 @@
+Geo\Application\ViewModel\CityViewModel:
+  exclusion_policy: all
+  properties:
+    city:
+      expose: true
+      type: Geo\Domain\Model\City
+      groups: [city]

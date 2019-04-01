@@ -1,0 +1,6 @@
+Geo\Application\Command\City\UpdateCityCommand:
+  properties:
+    name:
+      type: string
+    province:
+      type: integer

@@ -1,0 +1,4 @@
+Geo\Application\Query\Province\ProvinceListFilterQuery:
+  properties:
+    name:
+      type: string

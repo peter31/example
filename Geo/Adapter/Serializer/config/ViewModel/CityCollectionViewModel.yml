@@ -1,0 +1,11 @@
+Geo\Application\ViewModel\CityCollectionViewModel:
+  exclusion_policy: all
+  properties:
+    cities:
+      expose: true
+      type: array
+      groups: [cities]
+    pagination:
+      expose: true
+      type: Geo\Application\ViewModel\PaginationViewModel
+      groups: [pagination]

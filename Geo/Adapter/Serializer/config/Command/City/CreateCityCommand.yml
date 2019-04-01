@@ -1,0 +1,6 @@
+Geo\Application\Command\City\CreateCityCommand:
+  properties:
+    name:
+      type: string
+    province:
+      type: integer

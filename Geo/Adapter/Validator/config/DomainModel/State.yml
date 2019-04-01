@@ -1,0 +1,17 @@
+Geo\Domain\Model\State:
+  constraints:
+    - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+        fields: abbr
+        errorPath: abbr
+        message: validation.error.state_abbr.not_unique
+  properties:
+    name:
+      - NotBlank:
+          message: validation.error.field.must_not_be_blank
+    abbr:
+      - NotBlank:
+          message: validation.error.field.must_not_be_blank
+      - Length:
+          min: 2
+          max: 2
+          exactMessage: validation.error.length.exactly

@@ -1,0 +1,8 @@
+Geo\Application\Query\Province\ProvinceListQuery:
+  properties:
+    sort:
+      type: string
+    sort_type:
+      type: string
+    filters:
+      type: Geo\Application\Query\Province\ProvinceListFilterQuery

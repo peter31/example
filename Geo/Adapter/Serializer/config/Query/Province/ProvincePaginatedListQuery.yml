@@ -1,0 +1,12 @@
+Geo\Application\Query\Province\ProvincePaginatedListQuery:
+  properties:
+    page:
+      type: integer
+    limit:
+      type: integer
+    sort:
+      type: string
+    sort_type:
+      type: string
+    filters:
+      type: Geo\Application\Query\Province\ProvinceListFilterQuery

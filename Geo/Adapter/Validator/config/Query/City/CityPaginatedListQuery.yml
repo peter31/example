@@ -1,0 +1,19 @@
+Geo\Application\Query\City\CityPaginatedListQuery:
+  properties:
+    page:
+      - Type: integer
+      - Range:
+          min: 1
+    limit:
+      - Type: integer
+      - Range:
+          min: 1
+          max: 100
+    sort:
+      - Type: string
+    sort_type:
+      - NotBlank:
+      - Choice: ['asc', 'desc', 'ASC', 'DESC']
+    province:
+      - Range:
+          min: 1

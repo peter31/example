@@ -1,0 +1,12 @@
+Geo\Application\Query\State\StatePaginatedListQuery:
+  properties:
+    page:
+      type: integer
+    limit:
+      type: integer
+    sort:
+      type: string
+    sort_type:
+      type: string
+    filters:
+      type: Geo\Application\Query\State\StateListFilterQuery

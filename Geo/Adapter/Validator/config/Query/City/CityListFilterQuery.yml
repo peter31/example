@@ -1,0 +1,6 @@
+Geo\Application\Query\City\CityListFilterQuery:
+  properties:
+    name:
+      - Type: string
+    province:
+      - Type: integer

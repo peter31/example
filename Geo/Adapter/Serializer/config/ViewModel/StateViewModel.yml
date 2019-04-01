@@ -1,0 +1,7 @@
+Geo\Application\ViewModel\StateViewModel:
+  exclusion_policy: all
+  properties:
+    state:
+      expose: true
+      type: Geo\Domain\Model\State
+      groups: [state]

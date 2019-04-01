@@ -1,0 +1,6 @@
+Geo\Application\Command\State\CreateStateCommand:
+  properties:
+    name:
+      type: string
+    abbr:
+      type: string

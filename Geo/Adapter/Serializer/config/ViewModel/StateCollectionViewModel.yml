@@ -1,0 +1,11 @@
+Geo\Application\ViewModel\StateCollectionViewModel:
+  exclusion_policy: all
+  properties:
+    states:
+      expose: true
+      type: array
+      groups: [states]
+    pagination:
+      expose: true
+      type: Geo\Application\ViewModel\PaginationViewModel
+      groups: [pagination]

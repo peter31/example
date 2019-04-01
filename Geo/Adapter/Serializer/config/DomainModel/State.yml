@@ -1,0 +1,15 @@
+Geo\Domain\Model\State:
+  exclusion_policy: all
+  properties:
+    id:
+      expose: true
+      groups: [state_id]
+    name:
+      expose: true
+      groups: [state_name]
+    abbr:
+      expose: true
+      groups: [state_abbr]
+    updatedAt:
+      expose: true
+      groups: [state_updated_at]

@@ -1,0 +1,11 @@
+Geo\Application\ViewModel\ProvinceCollectionViewModel:
+  exclusion_policy: all
+  properties:
+    provinces:
+      expose: true
+      type: array
+      groups: [provinces]
+    pagination:
+      expose: true
+      type: Geo\Application\ViewModel\PaginationViewModel
+      groups: [pagination]

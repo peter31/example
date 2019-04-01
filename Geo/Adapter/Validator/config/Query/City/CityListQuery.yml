@@ -1,0 +1,9 @@
+Geo\Application\Query\City\CityListQuery:
+  properties:
+    sort:
+      - Type: string
+    sort_type:
+      - NotBlank:
+      - Choice: ['asc', 'desc', 'ASC', 'DESC']
+    filters:
+      - Valid:

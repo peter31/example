@@ -1,0 +1,6 @@
+Geo\Application\Command\State\UpdateStateCommand:
+  properties:
+    name:
+      type: string
+    abbr:
+      type: string
